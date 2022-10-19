@@ -1,0 +1,5 @@
+.image{
+    height:40em; background-size:cover; width:auto;
+    background-image:url('https://benjdd.com/courses/cs110/fall-2018/pas/bulls_and_cows/res/bulls_and_cows.png');
+    background-position:50% 50%;
+  }

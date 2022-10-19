@@ -1,0 +1,78 @@
+.background{
+  background-image: url("https://benjdd.com/courses/cs110/fall-2018/pas/bulls_and_cows/res/bulls_and_cows.png")
+}
+
+.styled-table {
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:20px;
+  border-collapse: collapse;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 400px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.15);
+  background-color: white;
+}
+
+.styled-table thead tr {
+  background-color: #009879;
+  color: #ffffff;
+  text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+
+}
+
+.styled-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
+
+.styled-table tbody tr.active-row {
+  font-weight: bold;
+  color: #009879;
+}
+
+.buttonsForm{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  border: 1px;
+  border-spacing: 20px;
+}
+
+.startButton{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.buttons{
+  background-color: #009879;
+  border-radius: 25px;
+  color: white;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 0.9em;
+  border: 2px solid #009879;
+}
+
+.h3{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

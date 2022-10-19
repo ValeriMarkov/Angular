@@ -1,0 +1,29 @@
+<div class="startButton"><button class="buttons" (click)="gameStart()" [hidden]="isGameStarted==true || isGameWon==true">Start game</button></div>
+<form class="buttonsForm">
+  <label for="playerGuess">Input guess:&nbsp;</label>
+  <input type="number" minlength="4" maxlength="4" class="form-control" id="playerGuess" name="playerGuess"
+    oninput="typescript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+    [(ngModel)]="playerGuess" #guessField="ngModel" />&nbsp;&nbsp;
+  <button class="buttons" (click)="submitAnswer()" [hidden]="isGameStarted==false || isGameWon==true">Submit guess</button>
+</form>
+
+<table class="styled-table">
+  <thead>
+    <tr>
+      <th>Turns</th>
+      <th>Last number</th>
+      <th>Bulls</th>
+      <th>Cows</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let turn of guessHistory; let i = index">
+      <td>{{i + 1}}</td>
+      <td>{{turn.playerGuess}}</td>
+      <td>{{turn.bulls}}</td>
+      <td>{{turn.cows}}</td>
+    </tr>
+  </tbody>
+</table>
+<h3 class="h3" *ngIf="this.isGameWon==true">You win !</h3>
+<div class="startButton"><button class="buttons" (click)="gameStart()" *ngIf="this.isGameWon==true">Play again ?</button></div>
